@@ -1,2 +1,19 @@
-<h1>StaticPages#top</h1>
-<p>Find me in app/views/static_pages/top.html.erb</p>
+<div class= 'container'>
+  <div class = 'child'>
+    <br>
+    <h1>パンの名前を覚えよう！</h1>
+    <br>
+    <%= link_to 'https://www.instagram.com/hoppe_pan/', target: :_blank, rel: 'noopener noreferrer' do %>
+      <%= image_tag 'hoppe.jpg', class: 'rounded-circle mr15', size: '200x200' %>
+    <% end %>
+    <div>
+      <%= link_to '初級', class: "btn" %>
+    </div>
+    <div>
+      <%= link_to '中級', class: "btn" %>
+    </div>
+    <div>
+      <%= link_to '上級', class: "btn" %>
+    </div>
+  </div>
+</div>
