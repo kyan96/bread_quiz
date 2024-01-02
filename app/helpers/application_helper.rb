@@ -15,13 +15,13 @@ module ApplicationHelper
         description: '沖縄県にあるパン屋さん『hoppepan』のパンの名前を答えるクイズアプリです！', 
         type: 'website',
         url: request.original_url,
-        image: image_url('hoppe.jpg'),
+        image: image_url('hoppe.png'),
         locale: 'ja_JP'
       },
       twitter: {
         card: 'summary_large_image',
         site: '@hime_7r',
-        image: image_url('hoppe.jpg')
+        image: image_url('hoppe.png')
       }
     }
   end

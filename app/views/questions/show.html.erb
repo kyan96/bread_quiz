@@ -1,0 +1,11 @@
+<h1>これ何パン？</h1>
+<%= form_tag(check_answer_question_path, method: :post) do %>
+  <p><%= @question.bread_image %></p>
+  <%= radio_button_tag :answer, @question.option1 %>
+  <%= label_tag :answer, @question.option1 %><br>
+  <%= radio_button_tag :answer, @question.option2 %>
+  <%= label_tag :answer, @question.option2 %><br>
+  <%= radio_button_tag :answer, @question.option3 %>
+  <%= label_tag :answer, @question.option3 %><br>
+  <%= submit_tag "Submit" %>
+<% end %>
