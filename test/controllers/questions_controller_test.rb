@@ -1,7 +1,8 @@
 require "test_helper"
 
 class QuestionsControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should get top" do
+    get questions_top_url
+    assert_response :success
+  end
 end

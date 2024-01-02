@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bread_image: MyString
+  option1: MyString
+  option2: MyString
+  option3: MyString
+  correct_answer: MyString
+
+two:
+  bread_image: MyString
+  option1: MyString
+  option2: MyString
+  option3: MyString
+  correct_answer: MyString
