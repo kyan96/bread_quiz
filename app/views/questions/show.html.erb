@@ -1,6 +1,6 @@
 <div class = 'container'>
   <div class = 'child'>
-    <h1>これ何パン？？</h1>
+    <h1>これ何パン？</h1>
     <%= form_tag(check_answer_question_path, method: :post) do %>
       <p><%= image_tag @question.bread_image, size: '400x400' %></p>
       <%= radio_button_tag :answer, @question.option1 %>
