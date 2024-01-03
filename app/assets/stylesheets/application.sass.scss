@@ -1,1 +1,14 @@
-// Entry point for your Sass build
+.container {
+  font-family: arial;
+  /* 水平・垂直方向の中央揃え */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:  center;
+}
+
+.child {
+  /* レスポンシブ的には400pxがいいのか…？ */
+  width: 500px;
+  height: 500px;
+}

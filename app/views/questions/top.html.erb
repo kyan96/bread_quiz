@@ -1,11 +1,13 @@
-<div class = 'child'>
-  <br>
-  <h1>パンの名前を当てよう！</h1>
-  <br>
-  <%= link_to 'https://www.instagram.com/hoppe_pan/', target: :_blank, rel: 'noopener noreferrer' do %>
-    <%= image_tag 'hoppe.png', size: '300x300' %>
-  <% end %>
-  <div>
-    <%= link_to '当ててみる', '#' %>
+<div class= 'container'>
+  <div class = 'child'>
+    <br>
+    <h1>パンの名前を当てよう！</h1>
+    <br>
+    <%= link_to 'https://www.instagram.com/hoppe_pan/', target: :_blank, rel: 'noopener noreferrer' do %>
+      <%= image_tag 'hoppe.png', size: '300x300' %>
+    <% end %>
+    <div>
+      <%= link_to '当ててみる', show_question_path %>
+    </div>
   </div>
 </div>
