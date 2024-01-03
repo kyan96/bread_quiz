@@ -87,3 +87,4 @@ production:
   database: app_production
   username: app
   password: <%= ENV["APP_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
