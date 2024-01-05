@@ -2,11 +2,11 @@
   <div class = 'child'>   
     <h1>結果</h1>
     <% if @selected_answer == @question.correct_answer %>
-    <%= image_tag "amazing.png" %>
+    <%= image_tag "amazing.png", size: '400x400'%>
     <h1>正解！🎉</h1>
     <p>パンをもらうことができます！</p>
     <% else %>
-    <%= image_tag "close.png" %>
+    <%= image_tag "close.png", size: '400x400'%>
     <h1>残念！🥹</h1>
     <p>パンはお預けです…。</p>
     <% end %>
