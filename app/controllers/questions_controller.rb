@@ -6,19 +6,8 @@ class QuestionsController < ApplicationController
   def show; end
 
   def check_answer
-    if params[:answer] == @question.correct_answer
-      session[:score] ||= 0
-      session[:score] += 1
-
-      if session[:score] == 5
-        @show_image = true
-        session[:score] = 0
-      end
-    else
-      session[:score] = 0
-    end
-
-    redirect_to action: :show
+    @question = Question.find(params[:question_id])
+    @selected_answer = params[:selected_answer]
   end
 
   private
