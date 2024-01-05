@@ -6,8 +6,9 @@
     <%= link_to 'https://www.instagram.com/hoppe_pan/', target: :_blank, rel: 'noopener noreferrer' do %>
       <%= image_tag 'hoppe.png', size: '300x300' %>
     <% end %>
-    <div>
-      <%= link_to '当ててみる', show_question_path %>
-    </div>
+
+    <%= link_to show_question_path do %>
+      <%= image_tag 'start.png', size: '250x100' %>
+    <% end %>
   </div>
 </div>

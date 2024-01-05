@@ -1,0 +1,24 @@
+<div class = 'container'>
+  <div class = 'child'>   
+    <h1>結果</h1>
+    <% if @selected_answer == @question.correct_answer %>
+    <%= image_tag "amazing.png" %>
+    <h1>正解！🎉</h1>
+    <p>パンをもらうことができます！</p>
+    <% else %>
+    <%= image_tag "close.png" %>
+    <h1>残念！🥹</h1>
+    <p>パンはお預けです…。</p>
+    <% end %>
+
+    <% if @selected_answer == @question.correct_answer %>
+        <%= link_to "https://twitter.com/intent/tweet?text=『 #{@selected_answer} 』をもらったよ！｜Bread Quiz &url=https://bread-quiz.onrender.com" do %>
+            <%= image_tag 'x.png', size: '250x100' %>
+        <% end %>
+    <% end %>
+
+    <%= link_to show_question_path do %>
+        <%= image_tag 'next.png', size: '250x100' %>
+    <% end %>
+  </div>
+</div>
