@@ -1,5 +1,5 @@
 # Bread Quiz / パンの名前当てクイズアプリ
-![](images/OGP.png)
+![](https://i.gyazo.com/2f774a5cc714356ed612aafe13428cbe.jpg)
 
 ## アプリ概要
 Bread Quizは、私が現在アルバイトをしている[hoppepan](https://www.instagram.com/hoppe_pan/)の
@@ -29,16 +29,24 @@ https://twitter.com/hime_7r
 正解すると、パンをもらう(Xでシェアする)ことができます。
 不正解、または選択せずに「回答する」を押した場合、パンはお預けです。
 
+▼正解した場合
+![](https://i.gyazo.com/a075577fdc1af0dd7740ed7b366fcf10.gif)
+
+▼不正解の場合、または選択せずに「回答する」を押した場合
+![](https://i.gyazo.com/2d286a96f05feb09afff2008f0da67d5.gif)
+
 ## 使用技術
 |カテゴリ|技術|
 |:--|:--|
 |フロントエンド|CSS|
-|バックエンド|Ruby 3.2.2 Rails 7.0.4|
+|バックエンド|Ruby 3.2.2 Rails 7.0.8|
 |データベース|PostgreSQL|
 |環境構築|Docker|
 |インフラ|render|
 
 ## 選定理由
+カリキュラムの復習としてミニアプリを作ったので、カリキュラムと同じような環境で開発しました。
+renderでデプロイしたかったので、PostgreSQLを使用しました。
 
 ## 工夫点
 1. 必要最低限の機能にし、誰でもすぐ遊べるようにしました
