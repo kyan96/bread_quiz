@@ -11,3 +11,7 @@
   width: 500px;
   height: 500px;
 }
+
+br::after {
+  content: none; /* 下線を非表示にする */
+}
