@@ -1,0 +1,52 @@
+# 「.rubocop_todo.ymlに書いてある内容はルール違反してても無視して下さい」という意味
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  # 最新のルールを適用する
+  NewCops: enable
+  # 結果のsuggest部分を非表示にする
+  SuggestExtensions: false
+  # rubocop対象外(リポジトリ毎で調節)
+  Exclude:
+    - 'vendor/**/*'
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+    - 'config/**/*'
+    - 'config.ru'
+    - 'Gemfile'
+  # 何のルールに引っかかったか表示する
+  DisplayCopNames: true
+
+### ルールのカスタマイズ
+
+# 一行あたりの文字数
+Layout/LineLength:
+  Enabled: false
+
+# 日本語にコメントを許可
+Style/AsciiComments:
+  Enabled: false
+
+# クラスにコメントを残さなくても良い
+Style/Documentation:
+  Enabled: false
+
+# コントローラ等のモジュールをネストしての宣言
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
